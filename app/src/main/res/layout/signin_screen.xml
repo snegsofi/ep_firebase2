@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        style="@style/imageViewIcon"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailContainer"
+        style="@style/TextInputEmail"
+        android:hint="Email"
+        android:layout_marginTop="197dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordContainer"
+        style="@style/TextInputPassword"
+        android:hint="Password"
+        app:errorEnabled="true"
+        android:layout_marginTop="5dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/signIn_Button"
+        style="@style/Button"
+        android:layout_marginTop="142dp"
+        android:hint="Sigh In"
+        android:onClick="sighIn_button"
+        android:backgroundTint="@color/orange"
+        />
+
+    <Button
+        android:id="@+id/signUp_button"
+        style="@style/Button"
+        android:hint="Sign Up"
+        android:onClick="sighUp_button"
+        android:backgroundTint="@color/orange"
+        />
+
+</LinearLayout>
